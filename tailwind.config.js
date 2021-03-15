@@ -8,7 +8,12 @@ module.exports = {
       'poppins-bold': ['Poppins Bold'],
       'poppins-semibold': ['Poppins SemiBold'],
       'poppins-light': ['Poppins Light'],
-     }
+     },
+    gradientColorStops: theme => ({
+      ...theme('colors'),
+      'operations-blue': '#9ec9e4',
+      'operations-blue-grad': '#f9fcfd'
+    })
   },
   variants: {
     extend: {},
