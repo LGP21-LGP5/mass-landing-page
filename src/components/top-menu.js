@@ -12,7 +12,7 @@ export default function TopMenu() {
   };
   return (
     <nav className={styles.container}>
-      <div className="flex flex-col sm:flex-row px-2 pt-8 pb-4 sm:pb-8 sm:px-20 items-center justify-between bg-gray-300">
+      <div className="flex flex-col sm:flex-row px-2 pt-8 pb-4 sm:pb-8 sm:px-20 items-center justify-between bg-gray-200">
         <StaticImage
           src="../images/brand-no-slogan.png"
           alt="MASS's logo"
@@ -23,7 +23,7 @@ export default function TopMenu() {
         />
         <ul className="inline-flex items-center sm:ml-auto">
           <li>
-            <Link to="/about" className="mx-2 text-purple-600 font-medium">
+            <Link to="/#about" className="mx-2 text-purple-600 font-medium">
               About Us
             </Link>
           </li>
