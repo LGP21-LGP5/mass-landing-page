@@ -11,8 +11,8 @@ module.exports = {
      },
     gradientColorStops: theme => ({
       ...theme('colors'),
-      'operations-blue': '#9ec9e4',
-      'operations-blue-grad': '#f9fcfd'
+      'operations-blue-grad-from': '#9ec9e4',
+      'operations-blue-grad-to': '#f9fcfd'
     })
   },
   variants: {
