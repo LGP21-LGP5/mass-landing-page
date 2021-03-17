@@ -13,14 +13,16 @@ export default function TopMenu() {
   return (
     <nav className={styles.container}>
       <div className="flex flex-col sm:flex-row px-2 pt-8 pb-4 sm:pb-8 sm:px-20 items-center justify-between bg-gray-200">
-        <StaticImage
-          src="../images/brand-no-slogan.png"
-          alt="MASS's logo"
-          loading="eager"
-          height={24}
-          aspectRatio="2785/537"
-          class="inline-block mb-3 sm:mb-auto"
-        />
+        <Link to="/">
+          <StaticImage
+            src="../images/brand-no-slogan.png"
+            alt="MASS's logo"
+            loading="eager"
+            height={24}
+            aspectRatio="2785/537"
+            class="inline-block mb-3 sm:mb-auto"
+          />
+        </Link>
         <ul className="inline-flex items-center sm:ml-auto">
           <li>
             <Link to="/#about" className="mx-2 text-purple-600 font-medium">

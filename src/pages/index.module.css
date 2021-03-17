@@ -1,0 +1,19 @@
+.topLevel {
+  grid-template-rows: auto 80vh 70vh 80vh auto auto;
+  @apply grid w-full;
+}
+
+.clients {
+  min-height: 60vh;
+  @apply flex flex-col justify-evenly py-8 px-6 sm:px-48;
+}
+
+.hero {
+  background-image: url(../images/purple-post-its.jpg);
+  @apply bg-purple-300 bg-cover px-6 sm:px-32 flex flex-col justify-center h-full;
+}
+
+.about {
+  background-image: url(../images/blue-collaborators.png);
+  @apply flex flex-col justify-evenly bg-blue-200 bg-cover px-6 sm:px-80;
+}
