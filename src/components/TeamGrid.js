@@ -1,10 +1,10 @@
 import * as React from "react"
 import ProfileCard from "./ProfileCard";
 
-const TeamGrid = () => {
+const TeamGrid = (props) => {
     return (
         <div class="flex flex-row flex-wrap justify-around">
-            {[...Array(1000).keys()].map((id) => <ProfileCard key={id} name='bernardo'></ProfileCard>)}
+            {props.team.map((p) => <ProfileCard key={p.Name} name={p.Name}></ProfileCard>)}
         </div>
     );
 }
