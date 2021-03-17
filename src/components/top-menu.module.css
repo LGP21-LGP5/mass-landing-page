@@ -1,6 +1,6 @@
 .container {
   grid-template-rows: auto auto;
-  @apply w-screen grid;
+  @apply w-full grid;
 }
 
 .projectsSubHidden {
@@ -8,5 +8,5 @@
 }
 
 .projectsSub {
-  @apply flex row-start-2 pb-2 sm:pb-4 items-center justify-evenly bg-gray-300;
+  @apply flex row-start-2 pb-2 sm:pb-4 items-center justify-evenly bg-gray-200;
 }
