@@ -7,8 +7,8 @@ const ProfileCard = (props) => {
 
   return (
     <div className='flex flex-col'>
-      <ProfilePic pic={picture} alt={`Profile picture of ${member.name}`} />
-      {member.role.match(/C.O/) && <div className='text-center'>{member.role}</div>}
+      <ProfilePic pic={picture} alt={`Profile picture of ${member.name}`} className='mb-4'/>
+      {member.role.match(/C.O/) && <div className='text-center font-bold text-2xl'>{member.role}</div>}
       <div className='text-center'>{member.name}</div>
       <div className='text-center'>LinkedIn</div>
     </div>
