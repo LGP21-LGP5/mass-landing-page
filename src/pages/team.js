@@ -55,7 +55,7 @@ const MeetUsPage = () => {
         nodes {
           name
           childImageSharp {
-            gatsbyImageData
+            gatsbyImageData(height: 125, width: 125)
           }
         }
       }
