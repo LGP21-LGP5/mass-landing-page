@@ -69,29 +69,25 @@ const MeetUsPage = () => {
     <React.Fragment>
       <TopMenu />
         <div>
-          <img className='mx-auto w-24' src={logo} alt='Mass company logo' />
-          <p className='text-center'>Meet the team that makes our company stand out!</p>
-          <div>
-            <h1 className='text-center'>ADMINISTRATION</h1>
+          <img className='mx-auto mt-10 w-24' src={logo} alt='Mass company logo' />
+          <p className='text-center mt-10 mb-16 text-2xl'>Meet the team that makes our company stand out!</p>
+          <div className='mb-24'>
+            <h1 className='text-center font-bold text-3xl mb-16'>ADMINISTRATION</h1>
             <ProfileCard member={ceo} pics={pictures} />
-            <div className='flex flex-row justify-center'>
-              <ProfileCard member={cmo} pics={pictures} />
-              <ProfileCard member={cto} pics={pictures} />
-              <ProfileCard member={cbo} pics={pictures} />
-            </div>
+            <TeamGrid team={[cbo, cto, cmo]} pics={pictures} />
           </div>
-          <div className="bg-gradient-to-t from-operations-blue-grad-from to-operations-blue-grad-to">
-            <h1 className='text-center'>OPERATIONS</h1>
+          <div className="bg-gradient-to-t from-operations-grad-from to-operations-grad-to pb-24">
+            <h1 className='text-center font-bold text-3xl mb-16 pt-24 text-operations'>OPERATIONS</h1>
             <ProfileCard member={cto} pics={pictures} />
             <TeamGrid team={operations.nodes} pics={pictures}/>
           </div>
-          <div className="bg-gradient-to-b from-operations-blue-grad-from to-operations-blue-grad-to">
-            <h1 className='text-center'>MULTIMEDIA</h1>
+          <div className="bg-gradient-to-b from-multimedia-grad-from to-multimedia-grad-to pb-24">
+            <h1 className='text-center font-bold text-3xl mb-16 pt-24 text-multimedia'>MULTIMEDIA</h1>
             <ProfileCard member={cmo} pics={pictures} />
             <TeamGrid team={multimedia.nodes} pics={pictures} />
           </div>
-          <div className="bg-gradient-to-t from-operations-blue-grad-from to-operations-blue-grad-to">
-            <h1 className='text-center'>SERVICES</h1>
+          <div className="bg-gradient-to-t from-operations-grad-from to-operations-grad-to pb-24">
+            <h1 className='text-center font-bold text-3xl mb-16 pt-24 text-operations'>SERVICES</h1>
             <ProfileCard member={cbo} pics={pictures} />
             <TeamGrid team={services.nodes} pics={pictures} />
           </div>
