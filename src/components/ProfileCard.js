@@ -6,11 +6,11 @@ const ProfileCard = (props) => {
   const picture = props.pics[props.member.up] || props.pics['default']
 
   return (
-    <div class='flex flex-col'>
+    <div className='flex flex-col'>
       <ProfilePic pic={picture} alt={`Profile picture of ${member.name}`} />
-      {member.role.match(/C.O/) && <div class='text-center'>{member.role}</div>}
-      <div class='text-center'>{member.name}</div>
-      <div class='text-center'>LinkedIn</div>
+      {member.role.match(/C.O/) && <div className='text-center'>{member.role}</div>}
+      <div className='text-center'>{member.name}</div>
+      <div className='text-center'>LinkedIn</div>
     </div>
   );
 }
