@@ -6,7 +6,7 @@ const TeamGrid = (props) => {
 
     return (
         <div className={`grid grid-cols-${nCols}`}>
-            {props.team.map((m, i) => <ProfileCard key={i} member={m} pics={props.pics}></ProfileCard>)}
+            {props.team.map((m, i) => <ProfileCard key={i} member={m} pics={props.pics} showRole={props.showRoles}></ProfileCard>)}
         </div>
     );
 }
