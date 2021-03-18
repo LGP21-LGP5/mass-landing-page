@@ -14,6 +14,6 @@
 }
 
 .about {
-  background-image: url(../images/blue-collaborators.png);
-  @apply flex flex-col justify-evenly bg-blue-200 bg-cover px-6 sm:px-80;
+  background-image: url(../images/blue-collaborators.jpg);
+  @apply flex flex-col justify-evenly bg-blue-200 bg-cover px-8 sm:px-80;
 }

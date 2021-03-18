@@ -31,15 +31,17 @@ const IndexPage = () => {
       </div>
       <div className={styles.about} id="about">
         <article className="text-center">
-          <h1 className="text-5xl text-blue-600 font-bold mb-6">Our Vision</h1>
-          <p className="text-3xl font-semibold">
+          <h1 className="text-4xl sm:text-5xl text-blue-600 font-bold mb-6">
+            Our Vision
+          </h1>
+          <p className="text-xl font-semibold">
             Create fresh and innovative solutions and lead European companies to
             become a world reference
           </p>
         </article>
         <article className="text-center">
-          <h1 className="text-5xl text-blue-600 font-bold mb-6">Our Mission</h1>
-          <p className="text-3xl font-semibold">
+          <h1 className="text-4xl text-blue-600 font-bold mb-6">Our Mission</h1>
+          <p className="text-xl font-semibold">
             Change how users interact with technology by creating tailor-made
             solutions aligned with our clients' goals
           </p>
