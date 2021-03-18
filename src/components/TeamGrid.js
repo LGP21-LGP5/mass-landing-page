@@ -4,7 +4,7 @@ import ProfileCard from "./ProfileCard";
 const TeamGrid = (props) => {
     return (
         <div class="flex flex-row flex-wrap justify-around">
-            {props.team.map((p) => <ProfileCard key={p.Name} name={p.Name}></ProfileCard>)}
+            {props.team.map((m, i) => <ProfileCard key={i} member={m} pics={props.pics}></ProfileCard>)}
         </div>
     );
 }
