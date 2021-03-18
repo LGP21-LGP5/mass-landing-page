@@ -3,7 +3,7 @@ import { GatsbyImage } from "gatsby-plugin-image"
 
 const ProfilePic = (props) => {
   return (
-    <GatsbyImage image={props.pic} alt={props.alt} className={`align-center rounded-full w-36 h-36 mx-auto ${props.className}`} />
+    <GatsbyImage image={props.pic} alt={props.alt} className={`align-center rounded-full mx-auto ${props.className}`} />
   );
 }
 
