@@ -6,6 +6,8 @@ module.exports = {
     fontFamily: {
       'poppins': ['Poppins Regular'],
       'poppins-bold': ['Poppins Bold'],
+      'poppins-semibold': ['Poppins SemiBold'],
+      'poppins-light': ['Poppins Light'],
      }
   },
   variants: {
