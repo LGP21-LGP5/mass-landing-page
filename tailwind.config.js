@@ -3,6 +3,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
+    fontFamily: {
+      'poppins': ['Poppins Regular'],
+      'poppins-bold': ['Poppins Bold'],
+     }
   },
   variants: {
     extend: {},
