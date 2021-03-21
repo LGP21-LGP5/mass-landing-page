@@ -15,6 +15,12 @@ module.exports = {
       'multimedia-grad-from': '#b293c4',
       'multimedia-grad-to': '#f6f3f9',
     }),
+    fontFamily: {
+      'poppins': ['Poppins Regular'],
+      'poppins-bold': ['Poppins Bold'],
+      'poppins-semibold': ['Poppins SemiBold'],
+      'poppins-light': ['Poppins Light'],
+     }
   },
   variants: {
     extend: {},
