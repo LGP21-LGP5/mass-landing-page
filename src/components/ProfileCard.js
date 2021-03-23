@@ -9,7 +9,7 @@ const ProfileCard = (props) => {
     <div className='flex flex-col mx-5'>
       <ProfilePic pic={picture} alt={`Profile picture of ${member.name}`} className='mb-2 md:mb-6 mt-6'/>
       {props.showRole && member.role.match(/C.O/) && <div className='text-center font-bold text-2xl mb-2'>{member.role}</div>}
-      <div className='text-center text-xl'>{member.name}</div>
+      <div className='text-center text-xl mb-6'>{member.name}</div>
     </div>
   );
 }
