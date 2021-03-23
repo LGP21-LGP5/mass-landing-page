@@ -20,7 +20,7 @@ module.exports = {
       'poppins-bold': ['Poppins Bold'],
       'poppins-semibold': ['Poppins SemiBold'],
       'poppins-light': ['Poppins Light'],
-     }
+     },
   },
   variants: {
     extend: {},
