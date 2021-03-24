@@ -18,10 +18,10 @@ const FaqsPage = () => {
       </div>
       <div className="mb-20 mx-20 xl:mx-40 2xl:mx-80">
         <div className="mb-10">
-          <p className="mx-auto font-poppins-bold text-l italic">
+          <p className="mx-auto font-poppins-bold text-lg italic">
             How can I contact you?
           </p>
-          <p className="mx-auto font-poppins text-gray-800 text-l mt-2">
+          <p className="mx-auto font-poppins text-gray-800 text-lg mt-2">
             You can get in touch with us through our message box available in
             Contact, in our menu links, and also through our social media
             channels that you can find in the bottom of the page.
@@ -29,29 +29,29 @@ const FaqsPage = () => {
         </div>
 
         <div className="mb-10">
-          <p className="mx-auto font-poppins-bold text-l italic">
+          <p className="mx-auto font-poppins-bold text-lg italic">
             Where can I find Mass’s portfolio?
           </p>
-          <p className="mx-auto font-poppins text-gray-800 text-l mt-2">
+          <p className="mx-auto font-poppins text-gray-800 text-lg mt-2">
             You can find our product portfolio in our header menu > Projects.
           </p>
         </div>
 
         <div className="mb-10">
-          <p className="mx-auto font-poppins-bold text-l italic">
+          <p className="mx-auto font-poppins-bold text-lg italic">
             What is the company's area of expertise?
           </p>
-          <p className="mx-auto font-poppins text-gray-800 text-l mt-2">
+          <p className="mx-auto font-poppins text-gray-800 text-lg mt-2">
             We create fresh, innovative, tailor-made solutions aligned with our
             client’s goals to change how users interact with technology.
           </p>
         </div>
 
         <div className="mb-10">
-          <p className="mx-auto font-poppins-bold text-l italic">
+          <p className="mx-auto font-poppins-bold text-lg italic">
             What kind of services does Mass provide?
           </p>
-          <p className="mx-auto font-poppins text-gray-800 text-l mt-2">
+          <p className="mx-auto font-poppins text-gray-800 text-lg mt-2">
             We offer software services, such as websites, mobile apps, or other
             applications, and develop everything they entail: interfaces,
             back-end and databases.
@@ -59,10 +59,10 @@ const FaqsPage = () => {
         </div>
 
         <div className="mb-10">
-          <p className="mx-auto font-poppins-bold text-l italic">
+          <p className="mx-auto font-poppins-bold text-lg italic">
             What is the LGP Challenge?
           </p>
-          <p className="mx-auto font-poppins text-gray-800 text-l mt-2">
+          <p className="mx-auto font-poppins text-gray-800 text-lg mt-2">
             A Living Lab for Professional Skills Development that brings
             together industry and academia.
           </p>
