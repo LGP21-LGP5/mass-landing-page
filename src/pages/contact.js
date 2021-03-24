@@ -8,7 +8,6 @@ import { StaticImage } from "gatsby-plugin-image";
 
 const ContactUsPage = () => {
 
-
     return (
         <Layout>
 
@@ -22,9 +21,13 @@ const ContactUsPage = () => {
 
             <h1 className="text-center text-4xl mb-14">Get in touch with us!</h1>
 
-            <div className="flex flex-row px-20 mb-14">
+            <div className="flex flex-col md:flex-row px-10 mb-14 lg:px-20">
 
-                <form className="form flex flex-col flex-grow">
+                <form id="contact-form"
+                    className="flex flex-col flex-grow mb-5 md:mb-0"
+                    method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact"
+                >
+                    <input type="hidden" name="bot-field" />
                     <input className={styles.formFieldM}
                         type="text"
                         name="name"
@@ -45,31 +48,43 @@ const ContactUsPage = () => {
                         name="message"
                         rows="5" />
                 </form>
-                <div className="w-1/6 flex flex-col justify-end mr-32 ml-5">
-                    <div className="flex flex-row justify-between mb-6">
-                        <StaticImage
-                            src="../images/facebook.png"
-                            alt="Mass' Facebook"
-                            height={40}
-                        />
-                        <StaticImage
-                            src="../images/linkedin.png"
-                            alt="Mass' LinkedIn"
-                            height={40}
-                        />
-                        <StaticImage
-                            src="../images/instagram.png"
-                            alt="Mass' Instagram"
-                            height={40}
-                        />
+                <div className="flex flex-row justify-between md:justify-end md:flex-col sm:ml-5 lg:w-36 lg:mr-32">
+                    <div className="flex flex-row justify-between items-center md:mb-6">
+                        <a href="#">
+                            <StaticImage
+                                className="float-left"
+                                src="../images/facebook.png"
+                                alt="Mass' Facebook"
+                                height={40}
+                            />
+                        </a>
+                        <a href="#">
+                            <StaticImage
+                                className="float-left"
+                                src="../images/linkedin.png"
+                                alt="Mass' LinkedIn"
+                                height={40}
+                            />
+                        </a>
+                        <a href="#">
+                            <StaticImage
+                                className="float-left"
+                                src="../images/instagram.png"
+                                alt="Mass' Instagram"
+                                height={40}
+                            />
+                        </a>
                     </div>
-                    <button className="bg-blue-600 text-white h-12  ">Send</button>
+                    <button type="submit"
+                        form="contact-form"
+                        className="bg-blue-600 text-white h-12 w-36"
+                    >
+                        Send
+                    </button>
                 </div>
             </div>
-
-
         </Layout>
-    )
+    );
 }
 
 export default ContactUsPage;
