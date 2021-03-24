@@ -7,13 +7,13 @@ export default function Footer() {
       <Link to="/faq" className="sm:flex-grow text-xl text-white font-light">
         FAQ's
       </Link>
-      <a className="text-xl text-white font-light sm:mx-8" href="#">
+      <a className="text-xl text-white font-poppins-light sm:mx-8" href="#">
         Instagram
       </a>
-      <a className="text-xl text-white font-light sm:mx-8" href="#">
+      <a className="text-xl text-white font-poppins-light sm:mx-8" href="#">
         Facebook{" "}
       </a>
-      <a className="text-xl text-white font-light sm:mx-8" href="#">
+      <a className="text-xl text-white font-poppins-light sm:mx-8" href="#">
         LinkedIn
       </a>
     </footer>
