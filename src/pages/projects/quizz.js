@@ -32,15 +32,12 @@ const QuizzPage = () => {
         ...memberFields2
       }
       pictureFiles: allFile(
-        filter: {
-          extension: { regex: "/png|jpg|jpeg/" }
-          name: { regex: "/(up.*)|default/" }
-        }
+        filter: {extension: {regex: "/png|jpg|jpeg/"}, name: {regex: "/((up)?.*)|default/"}}
       ) {
         nodes {
           name
           childImageSharp {
-            gatsbyImageData(height: 125, width: 125)
+            gatsbyImageData(height: 140, width: 140, quality: 100)
           }
         }
       }
@@ -48,7 +45,10 @@ const QuizzPage = () => {
   `);
 
   const pictures = [];
-  pictureFiles.nodes.forEach((pic) => (pictures[pic.name] = getImage(pic)));
+  pictureFiles.nodes.forEach(pic => {
+    const name = pic.name.match(/up.*|default/) ? pic.name : `up${pic.name}`;
+    pictures[name] = getImage(pic);
+  })
 
   return (
     <React.Fragment>

@@ -50,12 +50,12 @@ const MeetUsPage = () => {
         ...memberFields
       }
       pictureFiles: allFile(
-        filter: {extension: {regex: "/png|jpg|jpeg/"}, name: {regex: "/(up.*)|default/"}}
+        filter: {extension: {regex: "/png|jpg|jpeg/"}, name: {regex: "/((up)?.*)|default/"}}
       ) {
         nodes {
           name
           childImageSharp {
-            gatsbyImageData(height: 125, width: 125)
+            gatsbyImageData(height: 140, width: 140, quality: 100)
           }
         }
       }
@@ -63,12 +63,15 @@ const MeetUsPage = () => {
   `)
 
   const pictures = []
-  pictureFiles.nodes.forEach(pic => pictures[pic.name] = getImage(pic))
+  pictureFiles.nodes.forEach(pic => {
+    const name = pic.name.match(/up.*|default/) ? pic.name : `up${pic.name}`;
+    pictures[name] = getImage(pic);
+  })
 
   return (
     <React.Fragment>
       <img className='mx-auto mt-10 w-24' src={logo} alt='Mass company logo' />
-      <p className='text-center mt-10 mb-16 text-2xl'>Meet the team that makes our company stand out!</p>
+      <p className='text-center mx-10 mt-10 mb-16 text-2xl'>Meet the team that makes our company stand out!</p>
       <div className='mb-24'>
         <h1 className='text-center font-bold text-3xl mb-16'>ADMINISTRATION</h1>
         <ProfileCard member={ceo} pics={pictures} showRole={true} />
