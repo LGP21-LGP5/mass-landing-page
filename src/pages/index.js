@@ -35,8 +35,8 @@ const IndexPage = () => {
             Our Vision
           </h1>
           <p className="text-xl font-semibold">
-            Create fresh and innovative solutions and lead European companies to
-            become a world reference
+            To create fresh and innovative solutions for our customers, helping
+            them excel within their industries
           </p>
         </article>
         <article className="text-center">
