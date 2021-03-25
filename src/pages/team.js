@@ -50,7 +50,7 @@ const MeetUsPage = () => {
         ...memberFields
       }
       pictureFiles: allFile(
-        filter: {extension: {regex: "/png|jpg|jpeg/"}, name: {regex: "/(up.*)|default/"}}
+        filter: {extension: {regex: "/png|jpg|jpeg/"}, name: {regex: "/((up)?.*)|default/"}}
       ) {
         nodes {
           name
@@ -63,7 +63,10 @@ const MeetUsPage = () => {
   `)
 
   const pictures = []
-  pictureFiles.nodes.forEach(pic => pictures[pic.name] = getImage(pic))
+  pictureFiles.nodes.forEach(pic => {
+    const name = pic.name.match(/up.*|default/) ? pic.name : `up${pic.name}`;
+    pictures[name] = getImage(pic);
+  })
 
   return (
     <React.Fragment>
