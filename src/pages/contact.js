@@ -48,11 +48,11 @@ const ContactUsPage = () => {
                         name="message"
                         rows="5" />
                 </form>
-                <div className="flex flex-row justify-between md:justify-end md:flex-col sm:ml-5 lg:w-36 lg:mr-32">
+                <div className="flex flex-row justify-between md:justify-end md:flex-col md:ml-5 lg:w-36 lg:mr-32">
                     <div className="flex flex-row justify-between items-center md:mb-6">
                         <a href="#">
                             <StaticImage
-                                className="float-left"
+                                className="float-left mr-2 md:mr-0"
                                 src="../images/facebook.png"
                                 alt="Mass' Facebook"
                                 height={40}
@@ -60,7 +60,7 @@ const ContactUsPage = () => {
                         </a>
                         <a href="#">
                             <StaticImage
-                                className="float-left"
+                                className="float-left mr-2 md:mr-0"
                                 src="../images/linkedin.png"
                                 alt="Mass' LinkedIn"
                                 height={40}
