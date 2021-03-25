@@ -3,7 +3,7 @@ import TopMenu from "./top-menu";
 import Footer from "./footer";
 import Helmet from "react-helmet";
 
-function Layout({ children }) {
+function Layout({ children, className }) {
   return (
     <>
       <Helmet>
@@ -43,7 +43,7 @@ function Layout({ children }) {
       </Helmet>
       <div className="flex flex-col min-h-screen">
         <TopMenu />
-        <main className="flex-grow">{children}</main>
+        <main className={`flex-grow ${className || ""}`}>{children}</main>
         <Footer />
       </div>
     </>
