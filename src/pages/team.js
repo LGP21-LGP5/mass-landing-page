@@ -2,6 +2,7 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import ProfileCard from "../components/ProfileCard";
 import TeamGrid from "../components/TeamGrid";
+import Layout from "../components/layout";
 import logo from "../images/mass_icon.png"
 import { getImage } from "gatsby-plugin-image"
 
@@ -69,7 +70,7 @@ const MeetUsPage = () => {
   })
 
   return (
-    <React.Fragment>
+    <Layout>
       <img className='mx-auto mt-10 w-24' src={logo} alt='Mass company logo' />
       <p className='text-center mx-10 mt-10 mb-16 text-2xl'>Meet the team that makes our company stand out!</p>
       <div className='mb-24'>
@@ -92,7 +93,7 @@ const MeetUsPage = () => {
         <ProfileCard member={cbo} pics={pictures} showRole={true}/>
         <TeamGrid team={services.nodes} pics={pictures} showRoles={false} />
       </div>
-    </React.Fragment>
+    </Layout>
   );
 }
 

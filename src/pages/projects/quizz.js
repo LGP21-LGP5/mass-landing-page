@@ -1,8 +1,7 @@
 import * as React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { StaticImage, getImage } from "gatsby-plugin-image";
-import TopMenu from "../../components/top-menu";
-import Footer from "../../components/footer";
+import Layout from "../../components/layout";
 import ProfileCard from "../../components/ProfileCard";
 import TeamGrid from "../../components/TeamGrid";
 
@@ -51,8 +50,7 @@ const QuizzPage = () => {
   })
 
   return (
-    <React.Fragment>
-      <TopMenu />
+    <Layout>
       <img className="mx-auto mt-10 w-24" src={icon} alt="Mass company logo" />
       <div className="mt-20 mb-10 flex flex-col justify-center">
         <p className="mx-auto font-poppins-bold text-4xl">QUIZZ</p>
@@ -85,8 +83,7 @@ const QuizzPage = () => {
           />
         </a>
       </div>
-      <Footer />
-    </React.Fragment>
+    </Layout>
   );
 };
 
