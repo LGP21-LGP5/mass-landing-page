@@ -21,13 +21,14 @@ const ContactUsPage = () => {
 
             <h1 className="text-center text-4xl mb-14">Get in touch with us!</h1>
 
-            <div className="flex flex-col md:flex-row px-10 mb-14 lg:px-20 xl:px-64">
+            <form className="flex flex-col md:flex-row px-10 mb-14 lg:px-20 xl:px-64" method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact" id="contact-form">
 
-                <form id="contact-form"
+                <div
                     className="flex flex-col flex-grow mb-5 md:mb-0"
-                    method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact"
+                    
                 >
                     <input type="hidden" name="bot-field" />
+                    <input type="hidden" name="form-name" value="contact" />
                     <input className={styles.formFieldM}
                         type="text"
                         name="name"
@@ -47,7 +48,7 @@ const ContactUsPage = () => {
                         placeholder="Message"
                         name="message"
                         rows="5" />
-                </form>
+                </div>
                 <div className="flex flex-row justify-between md:justify-end md:flex-col md:ml-5 lg:w-36 lg:mr-32">
                     <div className="flex flex-row justify-between items-center md:mb-6">
                         <a href="#">
@@ -75,14 +76,13 @@ const ContactUsPage = () => {
                             />
                         </a>
                     </div>
-                    <button type="submit"
+                    <input type="submit"
                         form="contact-form"
                         className="bg-blue-600 text-white h-12 w-36"
-                    >
-                        Send
-                    </button>
+                        value="Send"
+                    />
                 </div>
-            </div>
+            </form>
         </Layout>
     );
 }
