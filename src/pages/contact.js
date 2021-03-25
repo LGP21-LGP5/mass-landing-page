@@ -21,7 +21,7 @@ const ContactUsPage = () => {
 
             <h1 className="text-center text-4xl mb-14">Get in touch with us!</h1>
 
-            <div className="flex flex-col md:flex-row px-10 mb-14 lg:px-20">
+            <div className="flex flex-col md:flex-row px-10 mb-14 lg:px-20 xl:px-64">
 
                 <form id="contact-form"
                     className="flex flex-col flex-grow mb-5 md:mb-0"
