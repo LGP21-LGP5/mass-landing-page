@@ -72,24 +72,24 @@ const MeetUsPage = () => {
   return (
     <Layout>
       <img className='mx-auto mt-10 w-24' src={logo} alt='Mass company logo' />
-      <p className='text-center mx-10 mt-10 mb-16 text-2xl'>Meet the team that makes our company stand out!</p>
+      <p className='text-center font-poppins mx-10 mt-10 mb-16 text-2xl'>Meet the team that makes our company stand out!</p>
       <div className='mb-24'>
-        <h1 className='text-center font-bold text-3xl mb-16'>ADMINISTRATION</h1>
+        <h1 className='text-center font-poppins-bold text-3xl mb-16'>ADMINISTRATION</h1>
         <ProfileCard member={ceo} pics={pictures} showRole={true} />
         <TeamGrid team={[cbo, cto, cmo]} pics={pictures} showRoles={true} />
       </div>
       <div className="bg-gradient-to-t from-operations-grad-from to-operations-grad-to pb-24">
-        <h1 className='text-center font-bold text-3xl mb-16 pt-24 text-operations'>OPERATIONS</h1>
+        <h1 className='text-center font-poppins-bold text-3xl mb-16 pt-24 text-operations'>OPERATIONS</h1>
         <ProfileCard member={cto} pics={pictures} showRole={true} />
         <TeamGrid team={operations.nodes} pics={pictures} showRoles={false} />
       </div>
       <div className="bg-gradient-to-b from-multimedia-grad-from to-multimedia-grad-to pb-24">
-        <h1 className='text-center font-bold text-3xl mb-16 pt-24 text-multimedia'>MULTIMEDIA</h1>
+        <h1 className='text-center font-poppins-bold text-3xl mb-16 pt-24 text-multimedia'>MULTIMEDIA</h1>
         <ProfileCard member={cmo} pics={pictures} showRole={true}/>
         <TeamGrid team={multimedia.nodes} pics={pictures} showRoles={false} />
       </div>
       <div className="bg-gradient-to-t from-operations-grad-from to-operations-grad-to pb-24">
-        <h1 className='text-center font-bold text-3xl mb-16 pt-24 text-operations'>SERVICES</h1>
+        <h1 className='text-center font-poppins-bold text-3xl mb-16 pt-24 text-operations'>SERVICES</h1>
         <ProfileCard member={cbo} pics={pictures} showRole={true}/>
         <TeamGrid team={services.nodes} pics={pictures} showRoles={false} />
       </div>

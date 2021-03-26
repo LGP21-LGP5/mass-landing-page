@@ -19,7 +19,7 @@ const ContactUsPage = () => {
                 />
             </div>
 
-            <h1 className="text-center text-4xl mb-14">Get in touch with us!</h1>
+            <h1 className="text-center font-poppins text-4xl mb-14">Get in touch with us!</h1>
 
             <form className="flex flex-col md:flex-row px-10 mb-14 lg:px-20 xl:px-64" method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact" id="contact-form">
 
@@ -78,7 +78,7 @@ const ContactUsPage = () => {
                     </div>
                     <input type="submit"
                         form="contact-form"
-                        className="bg-blue-600 text-white h-12 w-36"
+                        className="bg-operations font-poppins text-white h-12 w-36"
                         value="Send"
                     />
                 </div>

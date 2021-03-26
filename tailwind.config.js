@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       colors: theme => ({
-        'multimedia': '#682e8d',
-        'operations': '#006fb7'
+        'multimedia': '#662d91',
+        'operations': '#0071bc',
       }),
     },
     gradientColorStops: theme => ({
@@ -20,6 +20,7 @@ module.exports = {
       'poppins-bold': ['Poppins Bold'],
       'poppins-semibold': ['Poppins SemiBold'],
       'poppins-light': ['Poppins Light'],
+      'poppins-medium': ['Poppins Medium'],
      },
   },
   variants: {

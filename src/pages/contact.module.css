@@ -2,6 +2,7 @@
     @apply bg-gray-100;
     padding: 0.75rem 2rem;
     resize: none;
+    font-family: "Poppins Regular";
 }
 
 .formFieldM {
