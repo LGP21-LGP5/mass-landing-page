@@ -10,10 +10,10 @@ export default function IndexPage() {
   return (
     <Layout className={styles.topLevel}>
       <div className={styles.hero}>
-        <p className="font-medium text-white text-xl ml-1 uppercase">
+        <p className="font-poppins-medium text-white text-xl ml-1 uppercase">
           Presenting a new look on technology
         </p>
-        <p className="text-white text-6xl mt-4">
+        <p className="font-poppins-medium text-white text-6xl mt-4">
           Fresh and innovative
           <br />
           solutions for you
@@ -29,24 +29,24 @@ export default function IndexPage() {
       </div>
       <div className={styles.about} id="about">
         <article className="text-center">
-          <h1 className="text-4xl sm:text-5xl text-blue-600 font-bold mb-6">
+          <h1 className="text-4xl sm:text-5xl text-operations font-poppins-bold mb-6">
             Our Vision
           </h1>
-          <p className="text-xl font-semibold">
+          <p className="text-xl font-poppins-semibold">
             To create fresh and innovative solutions for our customers, helping
             them excel within their industries
           </p>
         </article>
         <article className="text-center">
-          <h1 className="text-4xl text-blue-600 font-bold mb-6">Our Mission</h1>
-          <p className="text-xl font-semibold">
+          <h1 className="text-4xl text-operations font-poppins-bold mb-6">Our Mission</h1>
+          <p className="text-xl font-poppins-semibold">
             Change how users interact with technology by creating tailor-made
             solutions aligned with our clients' goals
           </p>
         </article>
       </div>
       <article className={styles.clients}>
-        <h1 className="text-center text-5xl text-blue-600 font-bold">
+        <h1 className="text-center text-5xl text-operations font-poppins-bold">
           Our Clients
         </h1>
         <ul className="flex flex-col sm:flex-row justify-between items-center my-8">

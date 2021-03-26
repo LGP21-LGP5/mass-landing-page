@@ -27,7 +27,7 @@ export default function TopMenu() {
           <li>
             <Link
               to="/#about"
-              className="mx-2 text-purple-600 font-poppins-semibold"
+              className="mx-2 text-multimedia font-poppins-semibold"
             >
               About Us
             </Link>
@@ -35,14 +35,14 @@ export default function TopMenu() {
           <li>
             <Link
               to="/team"
-              className="mx-2 text-purple-600 font-poppins-semibold"
+              className="mx-2 text-multimedia font-poppins-semibold"
             >
               Our Team
             </Link>
           </li>
           <li>
             <button
-              className="mx-2 text-purple-600 font-poppins-semibold"
+              className="mx-2 text-multimedia font-poppins-semibold"
               onClick={toggleHidden}
             >
               Projects
@@ -51,7 +51,7 @@ export default function TopMenu() {
           <li>
             <Link
               to="/contact"
-              className="mx-2 text-purple-600 font-poppins-semibold"
+              className="mx-2 text-multimedia font-poppins-semibold"
             >
               Contact Us
             </Link>
@@ -66,7 +66,7 @@ export default function TopMenu() {
         <li>
           <Link
             to="/projects/fashable"
-            className="text-sm font-poppins-semibold text-purple-600"
+            className="text-sm font-poppins-semibold text-multimedia"
           >
             Fashable
           </Link>
@@ -74,7 +74,7 @@ export default function TopMenu() {
         <li>
           <Link
             to="/projects/efeupinho"
-            className="text-sm font-poppins-semibold text-purple-600"
+            className="text-sm font-poppins-semibold text-multimedia"
           >
             eFEUPinho
           </Link>
@@ -82,7 +82,7 @@ export default function TopMenu() {
         <li>
           <Link
             to="/projects/signalcheck"
-            className="text-sm font-poppins-semibold text-purple-600"
+            className="text-sm font-poppins-semibold text-multimedia"
           >
             SignalCheck
           </Link>
@@ -90,7 +90,7 @@ export default function TopMenu() {
         <li>
           <Link
             to="/projects/quizz"
-            className="text-sm font-poppins-semibold text-purple-600"
+            className="text-sm font-poppins-semibold text-multimedia"
           >
             Quizz
           </Link>
