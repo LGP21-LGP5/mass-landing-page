@@ -25,12 +25,18 @@ export default function TopMenu() {
         </Link>
         <ul className="inline-flex items-center sm:ml-auto">
           <li>
-            <Link to="/#about" className="mx-2 text-purple-600 font-poppins-semibold">
+            <Link
+              to="/#about"
+              className="mx-2 text-purple-600 font-poppins-semibold"
+            >
               About Us
             </Link>
           </li>
           <li>
-            <Link to="/team" className="mx-2 text-purple-600 font-poppins-semibold">
+            <Link
+              to="/team"
+              className="mx-2 text-purple-600 font-poppins-semibold"
+            >
               Our Team
             </Link>
           </li>
@@ -43,7 +49,10 @@ export default function TopMenu() {
             </button>
           </li>
           <li>
-            <Link to="/contact" className="mx-2 text-purple-600 font-poppins-semibold">
+            <Link
+              to="/contact"
+              className="mx-2 text-purple-600 font-poppins-semibold"
+            >
               Contact Us
             </Link>
           </li>
@@ -56,10 +65,10 @@ export default function TopMenu() {
       >
         <li>
           <Link
-            to="/projects/nose"
+            to="/projects/fashable"
             className="text-sm font-poppins-semibold text-purple-600"
           >
-            NOSE
+            Fashable
           </Link>
         </li>
         <li>

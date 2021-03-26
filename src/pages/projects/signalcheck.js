@@ -31,7 +31,10 @@ const SignalCheckPage = () => {
         ...memberFields2
       }
       pictureFiles: allFile(
-        filter: {extension: {regex: "/png|jpg|jpeg/"}, name: {regex: "/((up)?.*)|default/"}}
+        filter: {
+          extension: { regex: "/png|jpg|jpeg/" }
+          name: { regex: "/((up)?.*)|default/" }
+        }
       ) {
         nodes {
           name
@@ -44,10 +47,10 @@ const SignalCheckPage = () => {
   `);
 
   const pictures = [];
-  pictureFiles.nodes.forEach(pic => {
+  pictureFiles.nodes.forEach((pic) => {
     const name = pic.name.match(/up.*|default/) ? pic.name : `up${pic.name}`;
     pictures[name] = getImage(pic);
-  })
+  });
 
   return (
     <Layout>
@@ -83,7 +86,7 @@ const SignalCheckPage = () => {
         <a href="https://www.efacec.pt/" className="mx-auto">
           <StaticImage
             alt="Efacec Energia"
-            src="../images/efacec.png"
+            src="../../images/efacec.png"
             height="96"
             aspectRatio="4012/1460"
             className="mx-24 sm:mx-6 my-6"

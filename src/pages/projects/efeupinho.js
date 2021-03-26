@@ -31,7 +31,10 @@ const EfeupinhoPage = () => {
         ...memberFields2
       }
       pictureFiles: allFile(
-        filter: {extension: {regex: "/png|jpg|jpeg/"}, name: {regex: "/((up)?.*)|default/"}}
+        filter: {
+          extension: { regex: "/png|jpg|jpeg/" }
+          name: { regex: "/((up)?.*)|default/" }
+        }
       ) {
         nodes {
           name
@@ -44,10 +47,10 @@ const EfeupinhoPage = () => {
   `);
 
   const pictures = [];
-  pictureFiles.nodes.forEach(pic => {
+  pictureFiles.nodes.forEach((pic) => {
     const name = pic.name.match(/up.*|default/) ? pic.name : `up${pic.name}`;
     pictures[name] = getImage(pic);
-  })
+  });
 
   return (
     <Layout>
@@ -91,7 +94,7 @@ const EfeupinhoPage = () => {
         <a href="https://paginas.fe.up.pt/~ipoint/" className="mx-auto">
           <StaticImage
             alt="FEUP-iPoint"
-            src="../images/feup-ipoint.png"
+            src="../../images/feup-ipoint.png"
             height="96"
             aspectRatio="400/87"
             className="mx-24 sm:mx-6 my-6"

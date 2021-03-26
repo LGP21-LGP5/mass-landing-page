@@ -1,16 +1,14 @@
 import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
 
-import TopMenu from "../components/top-menu";
-import Footer from "../components/footer";
+import Layout from "../components/layout";
 
 import * as styles from "./index.module.css";
 
 // markup
-const IndexPage = () => {
+export default function IndexPage() {
   return (
-    <div className={styles.topLevel}>
-      <TopMenu />
+    <Layout className={styles.topLevel}>
       <div className={styles.hero}>
         <p className="font-medium text-white text-xl ml-1 uppercase">
           Presenting a new look on technology
@@ -35,8 +33,8 @@ const IndexPage = () => {
             Our Vision
           </h1>
           <p className="text-xl font-semibold">
-            Create fresh and innovative solutions and lead European companies to
-            become a world reference
+            To create fresh and innovative solutions for our customers, helping
+            them excel within their industries
           </p>
         </article>
         <article className="text-center">
@@ -98,9 +96,6 @@ const IndexPage = () => {
           </li>
         </ul>
       </article>
-      <Footer />
-    </div>
+    </Layout>
   );
-};
-
-export default IndexPage;
+}

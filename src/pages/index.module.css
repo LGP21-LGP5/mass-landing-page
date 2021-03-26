@@ -1,5 +1,5 @@
 .topLevel {
-  grid-template-rows: auto 80vh 70vh 80vh auto auto;
+  grid-template-rows: 80vh 70vh 80vh auto;
   @apply grid w-full;
 }
 
