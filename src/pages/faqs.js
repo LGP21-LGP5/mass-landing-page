@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Link } from "gatsby";
 
 import TopMenu from "../components/top-menu";
 import Footer from "../components/footer";
@@ -23,8 +24,18 @@ const FaqsPage = () => {
           </p>
           <p className="mx-auto font-poppins text-gray-800 text-lg mt-2">
             You can get in touch with us through our message box available in
-            Contact, in our menu links, and also through our social media
-            channels that you can find in the bottom of the page.
+            <Link to="/contact" className="hover:text-blue-600">
+              Contact
+            </Link>{" "}
+            or our email address{" "}
+            <a
+              href="mailto:mass.isacompany@gmail.com"
+              className="hover:text-blue-600"
+            >
+              mass.isacompany@gmail.com
+            </a>
+            , in our menu links, and also through our social media channels that
+            you can find in the bottom of the page.
           </p>
         </div>
 
@@ -33,7 +44,8 @@ const FaqsPage = () => {
             Where can I find Mass’s portfolio?
           </p>
           <p className="mx-auto font-poppins text-gray-800 text-lg mt-2">
-            You can find our product portfolio in our header menu > Projects.
+            You can find our product portfolio in our navigation menu under
+            Projects.
           </p>
         </div>
 

@@ -38,7 +38,9 @@ export default function IndexPage() {
           </p>
         </article>
         <article className="text-center">
-          <h1 className="text-4xl text-operations font-poppins-bold mb-6">Our Mission</h1>
+          <h1 className="text-4xl text-operations font-poppins-bold mb-6">
+            Our Mission
+          </h1>
           <p className="text-xl font-poppins-semibold">
             Change how users interact with technology by creating tailor-made
             solutions aligned with our clients' goals
