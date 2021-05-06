@@ -47,6 +47,44 @@ export default function TopMenu() {
             >
               Projects
             </button>
+            <ul
+              className={
+                projectsAreHidden ? styles.projectsSubHidden : styles.projectsSub
+              }
+            >
+              <li className="pl-2 pr-6 py-2 border-b-2 border-white">
+                <Link
+                  to="/projects/fashable"
+                  className="text-sm font-poppins-semibold text-multimedia "
+                >
+                  Fashable
+                </Link>
+              </li>
+              <li className="pl-2 pr-6 py-2 border-b-2 border-white">
+                <Link
+                  to="/projects/efeupinho"
+                  className="text-sm font-poppins-semibold text-multimedia"
+                >
+                  eFEUPinho
+                </Link>
+              </li>
+              <li className="pl-2 pr-6 py-2 border-b-2 border-white">
+                <Link
+                  to="/projects/signalcheck"
+                  className="text-sm font-poppins-semibold text-multimedia"
+                >
+                  SignalCheck
+                </Link>
+              </li>
+              <li className="pl-2 pr-6 py-2 border-b-2 border-white">
+                <Link
+                  to="/projects/quizz"
+                  className="text-sm font-poppins-semibold text-multimedia"
+                >
+                  Quizz
+                </Link>
+              </li>
+            </ul>
           </li>
           <li>
             <Link
@@ -58,44 +96,6 @@ export default function TopMenu() {
           </li>
         </ul>
       </div>
-      <ul
-        className={
-          projectsAreHidden ? styles.projectsSubHidden : styles.projectsSub
-        }
-      >
-        <li>
-          <Link
-            to="/projects/fashable"
-            className="text-sm font-poppins-semibold text-multimedia"
-          >
-            Fashable
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/projects/efeupinho"
-            className="text-sm font-poppins-semibold text-multimedia"
-          >
-            eFEUPinho
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/projects/signalcheck"
-            className="text-sm font-poppins-semibold text-multimedia"
-          >
-            SignalCheck
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/projects/quizz"
-            className="text-sm font-poppins-semibold text-multimedia"
-          >
-            Quizz
-          </Link>
-        </li>
-      </ul>
     </nav>
   );
 }
