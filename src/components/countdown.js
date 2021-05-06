@@ -14,24 +14,25 @@ function pad(number, maxLength, padChar) {
 }
 
 export default function CountdownTimer() {
+    const countdownDate = new Date('June 11, 2021 00:00:00').getTime();
 
     const [days, setDays] = useState('00');
     const [hours, setHours] = useState('00');
     const [minutes, setMinutes] = useState('00');
     const [seconds, setSeconds] = useState('00');
 
-
     let interval = useRef();
 
     const startTimer = () => {
-        const countdownDate = new Date('June 11, 2021 00:00:00').getTime();
 
         interval = setInterval(() => {
             const diff = countdownDate - (new Date()).getTime();
-
+            
+            
             if (diff < 0) {
                 // stop timer
                 clearInterval(interval.current);
+                return;
             }
 
             const d = Math.floor(diff / (1000 * 60 * 60 * 24));
@@ -47,6 +48,8 @@ export default function CountdownTimer() {
     };
 
     useEffect(() => {
+        if (countdownDate - (new Date()).getTime() < 0) return;
+        
         startTimer();
         return () => {
             clearInterval(interval.current)
