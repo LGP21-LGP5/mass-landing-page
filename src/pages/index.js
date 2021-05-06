@@ -2,6 +2,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
 
 import Layout from "../components/layout";
+import Countdown from "../components/countdown";
 
 import * as styles from "./index.module.css";
 
@@ -98,6 +99,9 @@ export default function IndexPage() {
           </li>
         </ul>
       </article>
+      <div>
+        <Countdown></Countdown>
+      </div>
     </Layout>
   );
 }
