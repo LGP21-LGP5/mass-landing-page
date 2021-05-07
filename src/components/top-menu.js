@@ -29,7 +29,7 @@ export default function TopMenu() {
               to="/#about"
               className="mx-2 text-multimedia font-poppins-semibold"
             >
-              About Us
+              Meet Us
             </Link>
           </li>
           <li>
