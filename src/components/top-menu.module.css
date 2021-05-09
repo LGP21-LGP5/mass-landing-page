@@ -1,6 +1,9 @@
 .container {
   grid-template-rows: auto auto;
   @apply w-full grid;
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 
 .projectsSubHidden {

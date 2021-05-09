@@ -43,7 +43,7 @@ function Layout({ children, className }) {
       </Helmet>
       <div className="flex flex-col min-h-screen">
         <TopMenu />
-        <main className={`flex-grow ${className || ""}`}>{children}</main>
+        <main className={`flex-grow pt-24 ${className || ""}`}>{children}</main>
         <Footer />
       </div>
     </>
