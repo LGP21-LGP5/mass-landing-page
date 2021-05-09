@@ -1,15 +1,13 @@
 import * as React from "react";
 import { Link } from "gatsby";
 
-import TopMenu from "../components/top-menu";
-import Footer from "../components/footer";
+import Layout from "../components/layout";
 
 import icon from "../images/icon.png";
 
 const FaqsPage = () => {
   return (
-    <React.Fragment>
-      <TopMenu />
+    <Layout>
       <img className="mx-auto mt-10 w-24" src={icon} alt="Mass company logo" />
       <div className="my-20 flex flex-col justify-center">
         <p className="mx-auto font-poppins-bold text-4xl">FAQ's</p>
@@ -23,7 +21,7 @@ const FaqsPage = () => {
             How can I contact you?
           </p>
           <p className="mx-auto font-poppins text-gray-800 text-lg mt-2">
-            You can get in touch with us through our message box available in
+            You can get in touch with us through our message box available in{" "}
             <Link to="/contact" className="hover:text-blue-600">
               Contact
             </Link>{" "}
@@ -80,8 +78,7 @@ const FaqsPage = () => {
           </p>
         </div>
       </div>
-      <Footer />
-    </React.Fragment>
+    </Layout>
   );
 };
 

@@ -50,6 +50,14 @@ export default function TopMenu() {
           </li>
           <li>
             <Link
+              to="/mediapress"
+              className="mx-2 text-multimedia font-poppins-semibold"
+            >
+              Media Press
+            </Link>
+          </li>
+          <li>
+            <Link
               to="/contact"
               className="mx-2 text-multimedia font-poppins-semibold"
             >
