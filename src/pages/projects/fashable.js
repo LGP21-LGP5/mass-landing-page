@@ -5,7 +5,7 @@ import Layout from "../../components/layout";
 import ProfileCard from "../../components/ProfileCard";
 import TeamGrid from "../../components/TeamGrid";
 
-import icon from "../../images/icon.png";
+import fashable from "../../images/fashable.png";
 
 const FashablePage = () => {
   const { team, teamLeader, pictureFiles } = useStaticQuery(graphql`
@@ -54,7 +54,7 @@ const FashablePage = () => {
 
   return (
     <Layout>
-      <img className="mx-auto mt-10 w-24" src={icon} alt="Mass company logo" />
+      <img className="mx-auto mt-10 w-24" src={fashable} alt="Fashable logo" />
       <div className="mt-20 mb-10 flex flex-col justify-center">
         <p className="mx-auto font-poppins-bold text-4xl">Fashable</p>
       </div>
