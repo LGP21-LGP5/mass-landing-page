@@ -49,6 +49,11 @@ export default function IndexPage() {
         </article>
       </div>
       <div className={styles.countdown}>
+        <StaticImage
+          src="../images/countdown.png"
+          height="60"
+          className="mb-6"
+        />
         <h1 className="text-4xl font-poppins-bold mb-6">Almost there!</h1>
         <Countdown></Countdown>
         <p className="text-xl font-poppins-medium my-5 text-center max-w-3xl">
