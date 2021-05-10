@@ -17,3 +17,10 @@
   background-image: url(../images/blue-collaborators.jpg);
   @apply flex flex-col justify-evenly bg-blue-200 bg-cover px-8 sm:px-80;
 }
+
+.countdown {
+  background-color: #1571bc;
+  color: white;
+  @apply font-poppins;
+  @apply flex flex-col items-center py-6;
+}

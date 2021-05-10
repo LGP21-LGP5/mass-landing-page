@@ -48,6 +48,18 @@ export default function IndexPage() {
           </p>
         </article>
       </div>
+      <div className={styles.countdown}>
+        <h1 className="text-4xl font-poppins-bold mb-6">Almost there!</h1>
+        <Countdown></Countdown>
+        <p className="text-xl font-poppins-medium my-5 text-center max-w-3xl">
+          The <span className="text-2xl font-poppins-semibold">LGP Challenge</span> is coming soon! Get notified when the big day comes - Subscribe and don't miss a thing.
+        </p>
+        <form>
+          <input type="email" placeholder="Your email here..." className="p-1 mr-3 text-right text-black"></input>
+          <button type="submit" className="bg-white text-operations p-1 px-2 font-poppins-semibold">Subscribe</button>
+        </form>
+        
+      </div>
       <article className={styles.clients}>
         <h1 className="text-center text-5xl text-operations font-poppins-bold">
           Our Clients
@@ -99,9 +111,6 @@ export default function IndexPage() {
           </li>
         </ul>
       </article>
-      <div>
-        <Countdown></Countdown>
-      </div>
     </Layout>
   );
 }
