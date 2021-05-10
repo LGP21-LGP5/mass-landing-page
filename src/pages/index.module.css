@@ -22,5 +22,5 @@
   background-color: #1571bc;
   color: white;
   @apply font-poppins;
-  @apply flex flex-col items-center py-6;
+  @apply flex flex-col items-center py-40;
 }
