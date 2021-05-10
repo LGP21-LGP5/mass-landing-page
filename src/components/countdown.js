@@ -14,7 +14,7 @@ function pad(number, maxLength, padChar) {
 }
 
 export default function CountdownTimer() {
-    const countdownDate = new Date('June 11, 2021 00:00:00').getTime();
+    const countdownDate = new Date('June 9, 2021 00:00:00').getTime();
 
     const [days, setDays] = useState('00');
     const [hours, setHours] = useState('00');
