@@ -1,5 +1,5 @@
 .topLevel {
-  grid-template-rows: 80vh 70vh 80vh auto;
+  grid-template-rows: 80vh 70vh 80vh 80vh auto;
   @apply grid w-full;
 }
 
@@ -16,4 +16,8 @@
 .about {
   background-image: url(../images/blue-collaborators.jpg);
   @apply flex flex-col justify-evenly bg-blue-200 bg-cover px-8 sm:px-80;
+}
+
+.brand {
+  @apply flex flex-col justify-evenly bg-cover px-8 sm:px-80 mb-80;
 }
