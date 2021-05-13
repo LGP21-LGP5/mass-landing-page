@@ -85,6 +85,22 @@ const ContactUsPage = () => {
                 height={40}
               />
             </a>
+            <a href="https://twitter.com/MassThecompany">
+              <StaticImage
+                className="float-left"
+                src="../images/twitter.png"
+                alt="Mass' Twitter"
+                height={40}
+              />
+            </a>
+            <a href="https://www.youtube.com/channel/UCdtxKXHwpK3pBrQQe4auxXw">
+              <StaticImage
+                className="float-left"
+                src="../images/youtube.png"
+                alt="Mass' Youtube"
+                height={40}
+              />
+            </a>
           </div>
           <input
             type="submit"
