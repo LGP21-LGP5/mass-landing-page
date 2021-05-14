@@ -28,22 +28,22 @@ export default function IndexPage() {
         />
       </div>
       <div className={styles.brand}>
-        <article className="text-center">
-          <h1 className="text-4xl sm:text-5xl text-operations font-poppins-bold mb-6">
+        <article className="w-full md:w-1/2 px-16">
+          <h1 className="text-center text-4xl sm:text-5xl text-operations font-poppins-bold mb-6">
             About Us
           </h1>
-          <p className="text-xl font-poppins-semibold">
+          <p className="text-center text-xl font-poppins-semibold">
           Mass Solutions was founded in 2021 by a group of enthusiastic FEUP students taking the LGP course (Laboratório de Gestão de Projetos).
           This course congregates students from various fields of knowledge such as Multimedia, Informatics Engineering and Services engineering.
           This mix of different knowledge areas is the perfect fit to create the best attempt possible to respond to our customer’s needs in all
           of the 4 projects Mass is involved in at the moment.
           </p>
         </article>
-        <article className="text-center">
-          <h1 className="text-4xl sm:text-5xl text-operations font-poppins-bold mb-6">
+        <article className="w-full md:w-1/2 px-16 mt-12 md:mt-0">
+          <h1 className="text-center text-4xl sm:text-5xl text-operations font-poppins-bold mb-6">
             Our Brand
           </h1>
-          <p className="text-xl font-poppins-semibold">
+          <p className="text-center text-xl font-poppins-semibold">
             The word mass means in the dictionary having an effect on or involving a large number of people.
             It also means a large amount of something that has no particular shape or arrangement. And that represents 
             three things very important to this company, that we wanted to have reflected both on our brand and our name: 
