@@ -21,14 +21,14 @@ const ContactUsPage = () => {
       </h1>
 
       <form
-        className="flex flex-col md:flex-row px-10 mb-14 lg:px-20 xl:px-64"
+        className="flex flex-col px-10 mb-14 lg:px-20 xl:px-64"
         method="post"
         netlify-honeypot="bot-field"
         data-netlify="true"
         name="contact"
         id="contact-form"
       >
-        <div className="flex flex-col flex-grow mb-5 md:mb-0">
+        <div className="flex flex-col flex-grow mb-5">
           <input type="hidden" name="bot-field" />
           <input type="hidden" name="form-name" value="contact" />
           <input
@@ -59,20 +59,20 @@ const ContactUsPage = () => {
             rows="5"
           />
         </div>
-        <div className="flex flex-row justify-between md:justify-end md:flex-col md:ml-5 lg:w-36 lg:mr-32">
-          <div className="flex flex-row justify-between items-center md:mb-6">
+        <div className="flex flex-row justify-between">
+          <div className="flex flex-row justify-between items-center">
             <a href="https://www.facebook.com/Mass-Solutions-that-matter-102042335354068">
               <StaticImage
-                className="float-left mr-2 md:mr-0"
-                src="../images/facebook.png"
+                className="float-left"
+                src="../images/socials/facebook.png"
                 alt="Mass' Facebook"
                 height={40}
               />
             </a>
             <a href="https://www.linkedin.com/company/mass-solutions-that-matter/">
               <StaticImage
-                className="float-left mr-2 md:mr-0"
-                src="../images/linkedin.png"
+                className="float-left"
+                src="../images/socials/linkedin.png"
                 alt="Mass' LinkedIn"
                 height={40}
               />
@@ -80,7 +80,7 @@ const ContactUsPage = () => {
             <a href="https://www.instagram.com/Mass_SolutionsthatMatter/">
               <StaticImage
                 className="float-left"
-                src="../images/instagram.png"
+                src="../images/socials/instagram.png"
                 alt="Mass' Instagram"
                 height={40}
               />
@@ -88,7 +88,7 @@ const ContactUsPage = () => {
             <a href="https://twitter.com/MassThecompany">
               <StaticImage
                 className="float-left"
-                src="../images/twitter.png"
+                src="../images/socials/twitter.png"
                 alt="Mass' Twitter"
                 height={40}
               />
@@ -96,7 +96,7 @@ const ContactUsPage = () => {
             <a href="https://www.youtube.com/channel/UCdtxKXHwpK3pBrQQe4auxXw">
               <StaticImage
                 className="float-left"
-                src="../images/youtube.png"
+                src="../images/socials/youtube.png"
                 alt="Mass' Youtube"
                 height={40}
               />
