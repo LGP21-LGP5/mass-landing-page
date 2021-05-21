@@ -54,7 +54,7 @@ const QuizzPage = () => {
 
   return (
     <Layout>
-      <img className="mx-auto mt-10 w-32" src={quizz} alt="Quizz logo" />
+      <img className="mx-auto mt-10 w-96" src={quizz} alt="Quizz logo" />
       <div className="mt-20 mb-10 flex flex-col justify-center">
         <p className="mx-auto font-poppins-bold text-4xl">QUIZZ</p>
       </div>
