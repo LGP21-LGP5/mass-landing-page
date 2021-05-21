@@ -1,5 +1,5 @@
 .topLevel {
-  grid-template-rows: 80vh 70vh 80vh auto;
+  grid-template-rows: 80vh 70vh auto 80vh auto;
   @apply grid w-full;
 }
 
@@ -23,4 +23,8 @@
   color: white;
   @apply font-poppins;
   @apply flex flex-col items-center py-40;
+}
+
+.brand {
+  @apply flex flex-col md:flex-row justify-evenly bg-cover mb-40;
 }

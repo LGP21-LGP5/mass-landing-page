@@ -12,7 +12,7 @@ export default function TopMenu() {
   };
   return (
     <nav className={styles.container}>
-      <div className="flex flex-col sm:flex-row px-2 pt-8 pb-4 sm:pb-8 sm:px-20 items-center justify-between bg-gray-200">
+      <div className="flex flex-col sm:flex-row px-2 pt-8 pb-4 sm:pb-8 sm:px-20 items-center justify-between bg-white">
         <Link to="/">
           <StaticImage
             src="../images/brand-no-slogan.png"
@@ -29,7 +29,7 @@ export default function TopMenu() {
               to="/#about"
               className="mx-2 text-multimedia font-poppins-semibold"
             >
-              About Us
+              Meet Us
             </Link>
           </li>
           <li>
@@ -47,6 +47,46 @@ export default function TopMenu() {
             >
               Projects
             </button>
+            <ul
+              className={
+                projectsAreHidden
+                  ? styles.projectsSubHidden
+                  : styles.projectsSub
+              }
+            >
+              <li className="pl-2 pr-6 py-2 border-b-2 border-white">
+                <Link
+                  to="/projects/fashable"
+                  className="text-sm font-poppins-semibold text-multimedia "
+                >
+                  Fashable
+                </Link>
+              </li>
+              <li className="pl-2 pr-6 py-2 border-b-2 border-white">
+                <Link
+                  to="/projects/efeupinho"
+                  className="text-sm font-poppins-semibold text-multimedia"
+                >
+                  eFEUPinho
+                </Link>
+              </li>
+              <li className="pl-2 pr-6 py-2 border-b-2 border-white">
+                <Link
+                  to="/projects/signalcheck"
+                  className="text-sm font-poppins-semibold text-multimedia"
+                >
+                  SignalCheck
+                </Link>
+              </li>
+              <li className="pl-2 pr-6 py-2 border-b-2 border-white">
+                <Link
+                  to="/projects/quizz"
+                  className="text-sm font-poppins-semibold text-multimedia"
+                >
+                  Quizz
+                </Link>
+              </li>
+            </ul>
           </li>
           <li>
             <Link
@@ -58,44 +98,6 @@ export default function TopMenu() {
           </li>
         </ul>
       </div>
-      <ul
-        className={
-          projectsAreHidden ? styles.projectsSubHidden : styles.projectsSub
-        }
-      >
-        <li>
-          <Link
-            to="/projects/fashable"
-            className="text-sm font-poppins-semibold text-multimedia"
-          >
-            Fashable
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/projects/efeupinho"
-            className="text-sm font-poppins-semibold text-multimedia"
-          >
-            eFEUPinho
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/projects/signalcheck"
-            className="text-sm font-poppins-semibold text-multimedia"
-          >
-            SignalCheck
-          </Link>
-        </li>
-        <li>
-          <Link
-            to="/projects/quizz"
-            className="text-sm font-poppins-semibold text-multimedia"
-          >
-            Quizz
-          </Link>
-        </li>
-      </ul>
     </nav>
   );
 }

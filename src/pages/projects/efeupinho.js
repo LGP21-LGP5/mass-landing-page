@@ -5,7 +5,7 @@ import Layout from "../../components/layout";
 import ProfileCard from "../../components/ProfileCard";
 import TeamGrid from "../../components/TeamGrid";
 
-import icon from "../../images/icon.png";
+import efeupinho from "../../images/efeupinho.png";
 
 const EfeupinhoPage = () => {
   const { team, teamLeader, pictureFiles } = useStaticQuery(graphql`
@@ -54,7 +54,11 @@ const EfeupinhoPage = () => {
 
   return (
     <Layout>
-      <img className="mx-auto mt-10 w-24" src={icon} alt="Mass company logo" />
+      <img
+        className="mx-auto mt-10 w-72"
+        src={efeupinho}
+        alt="eFeupinho logo"
+      />
       <div className="mt-20 mb-10 flex flex-col justify-center">
         <p className="mx-auto font-poppins-bold text-4xl">eFeupinho</p>
       </div>
