@@ -12,7 +12,7 @@ export default function TopMenu() {
   };
   return (
     <nav className={styles.container}>
-      <div className="flex flex-col sm:flex-row px-2 pt-8 pb-4 sm:pb-8 sm:px-20 items-center justify-between bg-gray-200">
+      <div className="flex flex-col sm:flex-row px-2 pt-8 pb-4 sm:pb-8 sm:px-20 items-center justify-between bg-white">
         <Link to="/">
           <StaticImage
             src="../images/brand-no-slogan.png"
@@ -49,7 +49,9 @@ export default function TopMenu() {
             </button>
             <ul
               className={
-                projectsAreHidden ? styles.projectsSubHidden : styles.projectsSub
+                projectsAreHidden
+                  ? styles.projectsSubHidden
+                  : styles.projectsSub
               }
             >
               <li className="pl-2 pr-6 py-2 border-b-2 border-white">
