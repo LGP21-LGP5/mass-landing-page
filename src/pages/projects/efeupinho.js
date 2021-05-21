@@ -54,7 +54,11 @@ const EfeupinhoPage = () => {
 
   return (
     <Layout>
-      <img className="mx-auto mt-10 w-24" src={efeupinho} alt="eFeupinho logo" />
+      <img
+        className="mx-auto mt-10 w-72"
+        src={efeupinho}
+        alt="eFeupinho logo"
+      />
       <div className="mt-20 mb-10 flex flex-col justify-center">
         <p className="mx-auto font-poppins-bold text-4xl">eFeupinho</p>
       </div>
