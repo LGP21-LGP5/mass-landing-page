@@ -2,6 +2,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import * as React from "react";
 
 import Layout from "../components/layout";
+import Countdown from "../components/countdown";
 
 import * as styles from "./index.module.css";
 
@@ -72,6 +73,37 @@ export default function IndexPage() {
             solutions aligned with our clients' goals
           </p>
         </article>
+      </div>
+      <div className={styles.countdown}>
+        <StaticImage
+          src="../images/countdown.png"
+          height="60"
+          className="mb-6"
+        />
+        <h1 className="text-4xl font-poppins-bold mb-6">Almost there!</h1>
+        <Countdown></Countdown>
+        <p className="text-xl font-poppins-medium my-5 text-center max-w-3xl">
+          The <span className="text-2xl font-poppins-semibold">LGP Challenge</span> is coming soon! Get notified when the big day comes - Subscribe and don't miss a thing.
+        </p>
+        <form
+          method="post"
+          netlify-honeypot="bot-field"
+          data-netlify="true"
+          name="lgp-countdown"
+          id="lgp-countdown-form"
+        >
+          <input type="hidden" name="bot-field" />
+          <input type="hidden" name="form-name" value="lgp-countdown" />
+          <input type="email" placeholder="Your email here..." className="p-1 mr-3 text-right text-black"></input>
+          <button
+            type="submit"
+            form="lgp-countdown-form"
+            className="bg-white text-operations p-1 px-2 font-poppins-semibold"
+          >
+            Subscribe
+          </button>
+        </form>
+
       </div>
       <article className={styles.clients}>
         <h1 className="text-center text-5xl text-operations font-poppins-bold">

@@ -1,0 +1,17 @@
+.card {
+    @apply font-poppins;
+    text-align: center;
+    margin-left: 2em;
+    margin-right: 2em; 
+}
+
+.value {
+    @apply font-poppins-bold;
+    font-size: 3em;
+}
+
+.label {
+    @apply font-poppins-semibold;
+    text-transform: uppercase;
+    font-size: 1em;
+}
