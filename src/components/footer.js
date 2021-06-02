@@ -28,6 +28,18 @@ export default function Footer() {
       >
         LinkedIn
       </a>
+      <a
+        className="text-xl text-white font-poppins-light sm:mx-8"
+        href="https://twitter.com/MassThecompany"
+      >
+        Twitter
+      </a>
+      <a
+        className="text-xl text-white font-poppins-light sm:mx-8"
+        href="https://www.youtube.com/channel/UCdtxKXHwpK3pBrQQe4auxXw"
+      >
+        Youtube
+      </a>
     </footer>
   );
 }

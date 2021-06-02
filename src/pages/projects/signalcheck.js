@@ -54,7 +54,11 @@ const SignalCheckPage = () => {
 
   return (
     <Layout>
-      <img className="mx-auto mt-10 w-40" src={signalcheck} alt="Signalcheck logo" />
+      <img
+        className="mx-auto mt-10 w-96"
+        src={signalcheck}
+        alt="Signalcheck logo"
+      />
       <div className="mt-20 mb-10 flex flex-col justify-center">
         <p className="mx-auto font-poppins-bold text-4xl">SignalCheck</p>
       </div>
