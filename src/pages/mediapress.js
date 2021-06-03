@@ -45,11 +45,11 @@ const MediaPressPage = () => {
           </p>
         </div>
         <div className="flex flex-wrap p-2 mx-20 sm:mx-64 mb-20 justify-center">
-          <File name="Media Press Kit" path="files/Media_Press_Kit.pdf" />
-          <File name="Brand Manual" path="files/Mass_DigitalBrandManual.pdf" />
-          <File name="Company Handbook" path="files/CHB_Mass.pdf" />
-          <File name="Graphic Resources" path="files/graphic_resources.zip" />
-          <File name="Flyers" path="files/flyers.zip" />
+          <File name="Media Press Kit" path="/files/Media_Press_Kit.pdf" />
+          <File name="Brand Manual" path="/files/Mass_DigitalBrandManual.pdf" />
+          <File name="Company Handbook" path="/files/CHB_Mass.pdf" />
+          <File name="Graphic Resources" path="/files/graphic_resources.zip" />
+          <File name="Flyers" path="/files/flyers.zip" />
           <Questions />
         </div>
       </Layout>
