@@ -74,9 +74,15 @@ const MeetUsPage = () => {
     }
   `);
 
+  const designer = {
+    name: 'Francisca Marques',
+    up: 'FranciscaMarques',
+    role: 'Head Designer',
+  }
+
   const pictures = [];
   pictureFiles.nodes.forEach((pic) => {
-    const name = pic.name.match(/up.*|default/) ? pic.name : `up${pic.name}`;
+    const name = pic.name.match(/up.*|default|FranciscaMarques/) ? pic.name : `up${pic.name}`;
     pictures[name] = getImage(pic);
   });
 
@@ -91,7 +97,7 @@ const MeetUsPage = () => {
           ADMINISTRATION
         </h1>
         <ProfileCard member={ceo} pics={pictures} showRole={true} />
-        <TeamGrid team={[cbo, cto, cmo]} pics={pictures} showRoles={true} />
+        <TeamGrid team={[cbo, cto, cmo, designer]} pics={pictures} showRoles={true} />
       </div>
       <div className="bg-gradient-to-t from-operations-grad-from to-operations-grad-to pb-24">
         <h1 className="text-center font-poppins-bold text-3xl mb-16 pt-24 text-operations">
