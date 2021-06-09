@@ -12,7 +12,7 @@ const ProfileCard = (props) => {
         alt={`Profile picture of ${member.name}`}
         className="mb-2 md:mb-6 mt-6"
       />
-      {props.showRole && member.role.match(/C.O/) && (
+      {props.showRole && (member.role.match(/C.O/) || member.role === 'Head Designer') && (
         <div className="text-center font-poppins-bold text-2xl mb-2">
           {member.role}
         </div>
